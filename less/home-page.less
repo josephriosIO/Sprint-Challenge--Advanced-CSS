@@ -121,4 +121,76 @@
       }
     }
   }
+
+  .contact {
+    border-top: 1px dashed @main-border-color;
+    padding: 2.5rem;
+
+    h3 {
+      display: block;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    h4 {
+      margin: 0.5rem 0 1.5rem;
+      display: block;
+      font-size: 1.3rem;
+    }
+
+    fieldset {
+      margin: 0 0 1rem;
+      min-width: 100%;
+      padding: 0;
+      width: 100%;
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="url"],
+      textarea {
+        width: 100%;
+        border: 1px solid @shuttle-gray;
+        background: @sea-shell;
+        margin: 0 0 0.5rem;
+        padding: 1rem;
+      }
+
+      input[type="text"]:hover,
+      input[type="email"]:hover,
+      input[type="tel"]:hover,
+      input[type="url"]:hover,
+      textarea:hover {
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid @shuttle-gray;
+      }
+
+      textarea {
+        height: 100px;
+        max-width: 100%;
+        resize: none;
+      }
+    }
+
+    button[type="submit"] {
+      cursor: pointer;
+      .btn-styling();
+
+      &:hover {
+        .btn-styling(@wild-sand, @btn-bg-color);
+
+        @media @mobile {
+          font-size: 2rem;
+          height: 5rem;
+          .fill-container();
+        }
+      }
+
+      @media @mobile {
+        font-size: 2rem;
+        height: 5rem;
+        .fill-container();
+      }
+    }
+  }
 } // home

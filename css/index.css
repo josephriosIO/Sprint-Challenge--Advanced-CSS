@@ -158,7 +158,7 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 11rem auto;
+  margin: 11rem auto 0 auto;
 }
 .nav-bar {
   position: fixed;
@@ -200,7 +200,7 @@ p {
 @media (max-width: 500px) {
   .nav-bar nav a {
     margin: 1rem 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 }
 footer {
@@ -338,4 +338,87 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .contact {
+  border-top: 1px dashed #dee2e6;
+  padding: 2.5rem;
+}
+.home .contact h3 {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.home .contact h4 {
+  margin: 0.5rem 0 1.5rem;
+  display: block;
+  font-size: 1.3rem;
+}
+.home .contact fieldset {
+  margin: 0 0 1rem;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+.home .contact fieldset input[type="text"],
+.home .contact fieldset input[type="email"],
+.home .contact fieldset input[type="tel"],
+.home .contact fieldset input[type="url"],
+.home .contact fieldset textarea {
+  width: 100%;
+  border: 1px solid #5e6164;
+  background: #f1f1f1;
+  margin: 0 0 0.5rem;
+  padding: 1rem;
+}
+.home .contact fieldset input[type="text"]:hover,
+.home .contact fieldset input[type="email"]:hover,
+.home .contact fieldset input[type="tel"]:hover,
+.home .contact fieldset input[type="url"]:hover,
+.home .contact fieldset textarea:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #5e6164;
+}
+.home .contact fieldset textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+.home .contact button[type="submit"] {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.5rem;
+  height: 3rem;
+  background: #22283a;
+  color: #f6f6f6;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #22283a;
+}
+.home .contact button[type="submit"]:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.5rem;
+  height: 3rem;
+  background: #f6f6f6;
+  color: #22283a;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #22283a;
+}
+@media (max-width: 500px) {
+  .home .contact button[type="submit"]:hover {
+    font-size: 2rem;
+    height: 5rem;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .contact button[type="submit"] {
+    font-size: 2rem;
+    height: 5rem;
+    width: 100%;
+  }
 }
