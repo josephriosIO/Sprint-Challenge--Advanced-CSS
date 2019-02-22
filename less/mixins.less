@@ -1,1 +1,21 @@
 // Mixins Here
+.centering() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fill-container() {
+  width: 100%;
+}
+
+.btn-styling(@background:@btn-bg-color, @btn-text-color:@wild-sand) {
+  .centering();
+  width: 8.5rem;
+  height: 3rem;
+  background: @background;
+  color: @btn-text-color;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid @btn-bg-color;
+}
