@@ -5,7 +5,7 @@
     .main-img {
       img {
         border-radius: 1rem;
-        width: 100%;
+        .fill-container();
       }
     }
     h2 {
@@ -20,7 +20,7 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .fill-container();
 
     @media @mobile {
       .mobile-hide {
@@ -35,7 +35,7 @@
       height: 100%;
 
       @media @mobile {
-        width: 100%;
+        .fill-container();
       }
     }
   }
@@ -60,11 +60,17 @@
     justify-content: center;
 
     @media @mobile {
-      margin-top: 2rem;
+      flex-direction: column-reverse;
+      padding: 1rem 2rem;
+      margin-top: 0;
     }
 
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        .fill-container();
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -86,6 +92,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        .fill-container();
+        margin: 0 0 1.5rem 0;
+      }
 
       img {
         width: 100%;
