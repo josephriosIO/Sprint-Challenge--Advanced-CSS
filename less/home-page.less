@@ -3,7 +3,10 @@
 .home {
   .intro {
     .main-img {
-      width: 100%;
+      img {
+        border-radius: 1rem;
+        width: 100%;
+      }
     }
     h2 {
       padding: 15px;
@@ -19,11 +22,21 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile {
+      .mobile-hide {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 
@@ -46,6 +59,10 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      margin-top: 2rem;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -59,6 +76,10 @@
 
       .btn {
         .btn-styling(@btn-bg-color, @wild-sand);
+
+        &:hover {
+          .btn-styling(@wild-sand, @btn-bg-color);
+        }
       }
     }
 

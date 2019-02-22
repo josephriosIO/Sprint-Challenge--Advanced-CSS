@@ -4,9 +4,18 @@
   flex-direction: column;
   margin: 3rem 0 0 0;
 
+  @media @mobile {
+    margin: 2rem 0 0 0;
+  }
+
   h1 {
     font-size: 5rem;
     margin-bottom: 1.5rem;
+
+    @media @mobile {
+      font-size: 4rem;
+      margin: 0;
+    }
   }
 
   nav {
@@ -17,6 +26,11 @@
       margin: 1rem 2rem;
       text-decoration: none;
       font-size: 1.5rem;
+
+      @media @mobile {
+        margin: 1rem 1rem;
+        font-size: 1.3rem;
+      }
     }
   }
 }
