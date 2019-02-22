@@ -165,7 +165,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
 .nav-bar h1 {
   font-size: 5rem;
