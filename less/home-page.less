@@ -43,6 +43,10 @@
   .visit-planets {
     padding: 15px;
 
+    @media @mobile {
+      margin-bottom: 2rem;
+    }
+
     h3 {
       margin-top: 11px;
     }
@@ -83,8 +87,20 @@
       .btn {
         .btn-styling(@btn-bg-color, @wild-sand);
 
+        @media @mobile {
+          font-size: 2rem;
+          height: 6rem;
+          .fill-container();
+        }
+
         &:hover {
           .btn-styling(@wild-sand, @btn-bg-color);
+
+          @media @mobile {
+            font-size: 2rem;
+            height: 6rem;
+            .fill-container();
+          }
         }
       }
     }
